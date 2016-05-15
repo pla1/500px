@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=500px
+Comment=webapp for 500px
+Type=Application
+Icon=500px.png
+Exec=ubuntu-html5-app-launcher $@ --www=www --inspector
+Terminal=false
+X-Ubuntu-Touch=true

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html data-ng-app="pdModule" ng-controller="pdController">
+
+<head>
+  <title>Photo Discoverer</title>
+  <script src="js/angular.js"></script>
+  <script src="js/controller.js"></script>
+  <link rel="stylesheet" href="css/app.css" type="text/css" />
+  <style>
+    .listContainer {
+      float: left;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="notSlideshowDiv" ng-show="!slideshowInProgress">
+    <h1>500px Explorer</h1>
+    <div class="option">Feature:
+      <select ng-model="selectedFeature" ng-options="item.name as item.name for item in fiveHundredPixFeatures" ng-change="pdPhotos()"></select>
+    </div>
+    <div class="option">Category:
+      <select ng-model="selectedCategory" ng-options="item.name as item.name for item in fiveHundredPixCategories" ng-change="pdPhotos()"></select>
+    </div>
+    <div class="option">Quantity:
+      <select ng-model="selectedQuantity" ng-change="pdPhotos()">
+        <option>10</option>
+        <option>20</option>
+        <option>30</option>
+        <option>40</option>
+        <option>50</option>
+        <option>60</option>height:98%; background-size:cover;
+        <option>70</option>
+        <option>80</option>
+        <option>90</option>
+        <option>100</option>
+      </select>
+    </div>
+    <div class="option">Size:
+      <select ng-model="selectedSize" ng-change="pdPhotos()">
+        <option value=1>70x70</option>
+        <option value=100>100x100</option>
+        <option value=2>140x140</option>
+        <option value=200>200x200</option>
+        <option value=30>256 on longest edge</option>
+        <option value=3>280x280</option>
+        <option value=20>300 high</option>
+        <option value=440>440x440</option>
+        <option value=31>450 high</option>
+        <option value=600>600x600</option>
+        <option value=21>600 high</option>
+        <option value=4>900 on longest edge</option>
+        <option value=1080>1080 on longest edge</option>
+        <option value=5>1170 on longest edge</option>
+        <option value=1600>1600 on longest edge</option>
+        <option value=2048>2048 on longest edge</option>
+      </select>
+    </div>
+    <div class="option">Slideshow seconds:
+      <select ng-model="selectedSeconds" ng-change="pdPhotos()">
+        <option value=0>Off</option>
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+        <option value=5>5</option>
+        <option value=6>6</option>
+        <option value=7>7</option>
+        <option value=8>8</option>
+        <option value=9>9</option>
+        <option value=10>10</option>
+        <option value=15>15</option>
+        <option value=20>20</option>
+        <option value=30>30</option>
+        <option value=60>60</option>
+      </select>
+    </div>
+    <div class="listContainer" ng-repeat="item in items">
+      <img ng-src="{{item.image_url}}">
+    </div>
+  </div>
+
+</body>
+
+</html>

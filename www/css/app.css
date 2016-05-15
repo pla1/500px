@@ -1,0 +1,17 @@
+body, h1, h2, h3, p, li, span {
+  font-family: Ubuntu;
+  color: white;
+  text-shadow: 2px 2px 8px black;
+}
+body {
+  height:98%;
+  background-size:cover;
+}
+html {
+  background: radial-gradient(ellipse at center,#2C001E, black);
+  height:100%;
+}
+.option {
+  font-size: x-large;
+  margin-bottom: 0.5em;
+}
