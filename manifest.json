@@ -9,7 +9,7 @@
             "desktop": "500px.desktop"
         }
     },
-    "version": "0.2",
+    "version": "0.3",
     "maintainer": "Patrick L Archibald (PLA) <Patrick.Archibald@gmail.com>",
     "framework": "ubuntu-sdk-14.10"
 }

@@ -2,7 +2,7 @@
 <html data-ng-app="pdModule" ng-controller="pdController">
 
 <head>
-  <title>Photo Discoverer</title>
+  <title>500px</title>
   <script src="js/angular.js"></script>
   <script src="js/controller.js"></script>
   <link rel="stylesheet" href="css/app.css" type="text/css" />
@@ -15,7 +15,7 @@
 
 <body>
   <div id="notSlideshowDiv" ng-show="!slideshowInProgress">
-    <h1>500px Explorer</h1>
+    <h1>500px</h1>
     <div class="option">Feature:
       <select ng-model="selectedFeature" ng-options="item.name as item.name for item in fiveHundredPixFeatures" ng-change="pdPhotos()"></select>
     </div>
