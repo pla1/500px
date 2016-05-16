@@ -1,0 +1,7 @@
+build-*
+*.user.*
+*.ubuntuhtmlproject.user
+*~
+*.click
+.ubuntu-sdk-deploy
+

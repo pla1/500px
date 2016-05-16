@@ -5,9 +5,6 @@ var pdApp = angular
     FIVEHUNDRED_PIX_API_URL_BASE: "https://api.500px.com"
   });
 
-
-
-
 pdApp.config(function($httpProvider) {
 
   $httpProvider.interceptors.push(function($q, $rootScope) {
@@ -135,13 +132,19 @@ pdApp.controller('pdController', ['$scope', '$http', 'CONSTANTS', function($scop
   $scope.selectedSize = storageGet("selectedSize", 2);
   $scope.selectedSeconds = storageGet("selectedSeconds", 0);
   var timer = null;
-  document.onkeydown = function(evt) {
-    evt = evt || window.event;
+
+  function stopSlideshow() {
     $scope.slideshowInProgress = false;
     $scope.selectedSeconds = 0;
     window.clearInterval(timer);
     document.getElementsByTagName("body")[0].style.backgroundImage = null;
     $scope.$apply();
+  }
+  document.getElementsByTagName("body")[0].addEventListener('touchstart',function(e){
+    stopSlideshow();  
+  });
+  document.onkeydown = function(evt) {
+    stopSlideshow();
   };
   $scope.pdPhotos = function() {
     console.log('pdPhotos - Feature: ' + $scope.selectedFeature + " category: " + $scope.selectedCategory + " quantity: " + $scope.quantity);
