@@ -138,6 +138,7 @@ pdApp.controller('pdController', ['$scope', '$http', 'CONSTANTS', function($scop
     $scope.selectedSeconds = 0;
     window.clearInterval(timer);
     document.getElementsByTagName("body")[0].style.backgroundImage = null;
+    document.body.style.cursor = 'default';
     $scope.$apply();
   }
   document.getElementsByTagName("body")[0].addEventListener('touchstart',function(e){
@@ -169,6 +170,7 @@ pdApp.controller('pdController', ['$scope', '$http', 'CONSTANTS', function($scop
       $scope.items = data.photos;
       if ($scope.selectedSeconds > 0) {
         slideshowIndex = 0;
+        document.body.style.cursor = 'none';
         slideshowRoutine();
         timer = setInterval(slideshowRoutine, $scope.selectedSeconds * 1000);
       }
