@@ -3,6 +3,6 @@ Name=500px
 Comment=Explore photos on 500px
 Type=Application
 Icon=500px.png
-Exec=ubuntu-html5-app-launcher $@ --www=www --inspector
+Exec=ubuntu-html5-app-launcher --www=www $@
 Terminal=false
 X-Ubuntu-Touch=true
