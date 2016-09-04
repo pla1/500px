@@ -1,15 +1,15 @@
 {
-    "name": "500px.pla",
-    "description": "Explore photos from 500px.com.",
     "architecture": "all",
-    "title": "500px",
+    "description": "Explore photos from 500px.com.",
+    "framework": "ubuntu-sdk-14.10-html",
     "hooks": {
         "500px": {
-            "apparmor": "500px.apparmor",
+            "apparmor": "500px.json",
             "desktop": "500px.desktop"
         }
     },
-    "version": "0.4",
     "maintainer": "Patrick L Archibald (PLA) <Patrick.Archibald@gmail.com>",
-    "framework": "ubuntu-sdk-15.04.6"
+    "name": "500px.pla",
+    "title": "500px",
+    "version": "0.6"
 }

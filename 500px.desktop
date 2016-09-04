@@ -1,8 +1,8 @@
 [Desktop Entry]
 Name=500px
 Comment=Explore photos on 500px
-Exec=ubuntu-app-launch --www=www $@
-Icon=500px.png
+Exec=webapp-container $@ www/index.html
 Terminal=false
 Type=Application
 X-Ubuntu-Touch=true
+Icon=./500px.png
