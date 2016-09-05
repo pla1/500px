@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 3.5.1, 2016-09-04T17:51:07. -->
+<!-- Written by QtCreator 3.5.1, 2016-09-05T13:04:03. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -102,8 +102,8 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">UbuntuProjectManager.UploadStep</value>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
-       <value type="QString">/usr/ubuntu-sdk-ide/share/qtcreator/ubuntu/scripts/qtc_device_applaunch.py</value>
        <value type="QString">/home/htplainf/projects/500px/500px.pla_0.5_all.click</value>
+       <value type="QString">/usr/ubuntu-sdk-ide/share/qtcreator/ubuntu/scripts/qtc_device_applaunch.py</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
        <value type="QString">127.0.0.1</value>
@@ -118,8 +118,8 @@
        <value type="QString">/var/lib/schroot/chroots/click-ubuntu-sdk-15.04-armhf</value>
       </valuelist>
       <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2016-09-04T17:46:26</value>
        <value type="QDateTime">2016-09-04T17:46:25</value>
+       <value type="QDateTime">2016-09-04T17:46:26</value>
       </valuelist>
      </valuemap>
      <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">2</value>
